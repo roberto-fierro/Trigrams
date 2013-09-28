@@ -23,6 +23,21 @@
 		E17E14F817F7485B003B5AED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17E14D317F7485A003B5AED /* Foundation.framework */; };
 		E17E150017F7485B003B5AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E17E14FE17F7485B003B5AED /* InfoPlist.strings */; };
 		E17E150317F7485B003B5AED /* TrigramsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E150217F7485B003B5AED /* TrigramsTests.m */; };
+		E17E150E17F758BB003B5AED /* Trigram.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E150D17F758BB003B5AED /* Trigram.m */; };
+		E17E150F17F758BB003B5AED /* Trigram.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E150D17F758BB003B5AED /* Trigram.m */; };
+		E17E151817F78226003B5AED /* TrigramsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E151717F78225003B5AED /* TrigramsReader.m */; };
+		E17E151917F78226003B5AED /* TrigramsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E151717F78225003B5AED /* TrigramsReader.m */; };
+		E17E151F17F78829003B5AED /* book1 test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151A17F78829003B5AED /* book1 test.txt */; };
+		E17E152017F78829003B5AED /* book1 test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151A17F78829003B5AED /* book1 test.txt */; };
+		E17E152117F78829003B5AED /* book1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151B17F78829003B5AED /* book1.txt */; };
+		E17E152217F78829003B5AED /* book1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151B17F78829003B5AED /* book1.txt */; };
+		E17E152317F78829003B5AED /* book2 test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151C17F78829003B5AED /* book2 test.txt */; };
+		E17E152417F78829003B5AED /* book2 test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151C17F78829003B5AED /* book2 test.txt */; };
+		E17E152517F78829003B5AED /* book2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151D17F78829003B5AED /* book2.txt */; };
+		E17E152617F78829003B5AED /* book2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151D17F78829003B5AED /* book2.txt */; };
+		E17E152717F78829003B5AED /* test kata.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151E17F78829003B5AED /* test kata.txt */; };
+		E17E152817F78829003B5AED /* test kata.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151E17F78829003B5AED /* test kata.txt */; };
+		E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +73,17 @@
 		E17E14FF17F7485B003B5AED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E17E150117F7485B003B5AED /* TrigramsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrigramsTests.h; sourceTree = "<group>"; };
 		E17E150217F7485B003B5AED /* TrigramsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrigramsTests.m; sourceTree = "<group>"; };
+		E17E150C17F758BB003B5AED /* Trigram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trigram.h; sourceTree = "<group>"; };
+		E17E150D17F758BB003B5AED /* Trigram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trigram.m; sourceTree = "<group>"; };
+		E17E151617F78225003B5AED /* TrigramsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsReader.h; sourceTree = "<group>"; };
+		E17E151717F78225003B5AED /* TrigramsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsReader.m; sourceTree = "<group>"; };
+		E17E151A17F78829003B5AED /* book1 test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book1 test.txt"; sourceTree = "<group>"; };
+		E17E151B17F78829003B5AED /* book1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = book1.txt; sourceTree = "<group>"; };
+		E17E151C17F78829003B5AED /* book2 test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "book2 test.txt"; sourceTree = "<group>"; };
+		E17E151D17F78829003B5AED /* book2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = book2.txt; sourceTree = "<group>"; };
+		E17E151E17F78829003B5AED /* test kata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test kata.txt"; sourceTree = "<group>"; };
+		E17E152A17F78BE2003B5AED /* TrigramsReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsReaderTests.h; sourceTree = "<group>"; };
+		E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsReaderTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +143,17 @@
 		E17E14D717F7485A003B5AED /* Trigrams */ = {
 			isa = PBXGroup;
 			children = (
+				E17E152917F7882F003B5AED /* Book Files */,
 				E17E14E017F7485A003B5AED /* AppDelegate.h */,
 				E17E14E117F7485A003B5AED /* AppDelegate.m */,
 				E17E14E917F7485A003B5AED /* MainStoryboard.storyboard */,
 				E17E14EC17F7485A003B5AED /* ViewController.h */,
 				E17E14ED17F7485A003B5AED /* ViewController.m */,
 				E17E14D817F7485A003B5AED /* Supporting Files */,
+				E17E150C17F758BB003B5AED /* Trigram.h */,
+				E17E150D17F758BB003B5AED /* Trigram.m */,
+				E17E151617F78225003B5AED /* TrigramsReader.h */,
+				E17E151717F78225003B5AED /* TrigramsReader.m */,
 			);
 			path = Trigrams;
 			sourceTree = "<group>";
@@ -147,6 +178,8 @@
 				E17E150117F7485B003B5AED /* TrigramsTests.h */,
 				E17E150217F7485B003B5AED /* TrigramsTests.m */,
 				E17E14FC17F7485B003B5AED /* Supporting Files */,
+				E17E152A17F78BE2003B5AED /* TrigramsReaderTests.h */,
+				E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */,
 			);
 			path = TrigramsTests;
 			sourceTree = "<group>";
@@ -158,6 +191,18 @@
 				E17E14FE17F7485B003B5AED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E17E152917F7882F003B5AED /* Book Files */ = {
+			isa = PBXGroup;
+			children = (
+				E17E151A17F78829003B5AED /* book1 test.txt */,
+				E17E151B17F78829003B5AED /* book1.txt */,
+				E17E151C17F78829003B5AED /* book2 test.txt */,
+				E17E151D17F78829003B5AED /* book2.txt */,
+				E17E151E17F78829003B5AED /* test kata.txt */,
+			);
+			name = "Book Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +281,11 @@
 				E17E14E617F7485A003B5AED /* Default@2x.png in Resources */,
 				E17E14E817F7485A003B5AED /* Default-568h@2x.png in Resources */,
 				E17E14EB17F7485A003B5AED /* MainStoryboard.storyboard in Resources */,
+				E17E151F17F78829003B5AED /* book1 test.txt in Resources */,
+				E17E152117F78829003B5AED /* book1.txt in Resources */,
+				E17E152317F78829003B5AED /* book2 test.txt in Resources */,
+				E17E152517F78829003B5AED /* book2.txt in Resources */,
+				E17E152717F78829003B5AED /* test kata.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17E150017F7485B003B5AED /* InfoPlist.strings in Resources */,
+				E17E152017F78829003B5AED /* book1 test.txt in Resources */,
+				E17E152217F78829003B5AED /* book1.txt in Resources */,
+				E17E152417F78829003B5AED /* book2 test.txt in Resources */,
+				E17E152617F78829003B5AED /* book2.txt in Resources */,
+				E17E152817F78829003B5AED /* test kata.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +328,8 @@
 				E17E14DE17F7485A003B5AED /* main.m in Sources */,
 				E17E14E217F7485A003B5AED /* AppDelegate.m in Sources */,
 				E17E14EE17F7485A003B5AED /* ViewController.m in Sources */,
+				E17E150E17F758BB003B5AED /* Trigram.m in Sources */,
+				E17E151817F78226003B5AED /* TrigramsReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17E150317F7485B003B5AED /* TrigramsTests.m in Sources */,
+				E17E150F17F758BB003B5AED /* Trigram.m in Sources */,
+				E17E151917F78226003B5AED /* TrigramsReader.m in Sources */,
+				E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +513,7 @@
 				E17E150817F7485B003B5AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E17E150917F7485B003B5AED /* Build configuration list for PBXNativeTarget "TrigramsTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +522,7 @@
 				E17E150B17F7485B003B5AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

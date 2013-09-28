@@ -26,7 +26,8 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in TrigramsTests");
+    //STFail(@"Unit tests are not implemented yet in TrigramsTests");
 }
+
 
 @end
