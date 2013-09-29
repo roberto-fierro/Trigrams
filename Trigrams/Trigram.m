@@ -18,9 +18,9 @@
 -(id) init {
     self = [super init];
     if (self) {
-        NSLog(@"_init: %@", self);
+        return(self);
     }
-    return(self);
+    return nil;
 }
 
 -(id) initWithWords:(NSArray *) words{

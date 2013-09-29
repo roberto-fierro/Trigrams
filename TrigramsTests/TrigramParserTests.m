@@ -27,9 +27,9 @@
     [super tearDown];
 }
 
-
+/*
 -(void) testParsingTrigramsWithString{
-    NSString *fileName = @"book1";
+    NSString *fileName = @"test kata";
     TrigramsReader *reader = [[TrigramsReader alloc] init];
     NSArray *paragraphs = [reader readTrigramsFromFileName:fileName];
     TrigramsParser *parser = [[TrigramsParser alloc] init];
@@ -57,6 +57,25 @@
         NSString *paragraph = (NSString*)anObject;
         NSLog(@"%@",[parser addBlanckspceToPuntuationInString:paragraph]);
     }];
+}
+*/
+-(void) testStarterKeyAndBiggestCounter{
+    NSString *fileName = @"book1";
+    TrigramsReader *reader = [[TrigramsReader alloc] init];
+    NSArray *paragraphs = [reader readTrigramsFromFileName:fileName];
+    TrigramsParser *parser = [[TrigramsParser alloc] init];
+    
+    [paragraphs enumerateObjectsUsingBlock:^(id anObject, NSUInteger idx, BOOL *stop) {
+        NSString *paragraph = (NSString*)anObject;
+        paragraph = [parser addBlanckspceToPuntuationInString:paragraph];
+        NSLog(@"%@",paragraph);
+        [parser parseTrigramsWithString:paragraph];
+    }];
+    
+    STAssertNotNil([parser starterKey], @"Starter Key is null that's a problem!!");
+    STAssertNotNil([parser lastCounter], @"Biggest counter is null that's a problem!!");
+    NSLog(@"StarterKey is: %@",[parser starterKey]);
+    NSLog(@"Biggest counter is: %@",[parser lastCounter]);
 }
 
 

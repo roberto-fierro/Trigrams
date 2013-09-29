@@ -21,10 +21,10 @@
         NSLog(@"Error reading file: %@", error.localizedDescription);
     
     // maybe for debugging...
-    NSLog(@"contents: %@", fileContents);
+    //NSLog(@"contents: %@", fileContents);
     
-    NSArray *paragraphsArray = [fileContents componentsSeparatedByString:@"\n"];
-    NSLog(@"items = %d", [paragraphsArray count]);
+    NSArray *paragraphsArray = [fileContents componentsSeparatedByString:@"\r\n"];
+    //NSLog(@"items = %d", [paragraphsArray count]);
     return paragraphsArray;
 }
 
