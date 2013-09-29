@@ -10,8 +10,6 @@
 
 @implementation TrigramsReader
 
-@synthesize Trigrams = _Trigrams;
-
 
 -(NSArray *)readTrigramsFromFileName:(NSString*)fileName{
     //All books will be txt files

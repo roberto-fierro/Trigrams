@@ -38,6 +38,8 @@
 		E17E152717F78829003B5AED /* test kata.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151E17F78829003B5AED /* test kata.txt */; };
 		E17E152817F78829003B5AED /* test kata.txt in Resources */ = {isa = PBXBuildFile; fileRef = E17E151E17F78829003B5AED /* test kata.txt */; };
 		E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */; };
+		E17E152F17F7912A003B5AED /* TrigramsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152E17F7912A003B5AED /* TrigramsParser.m */; };
+		E17E153017F7912A003B5AED /* TrigramsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152E17F7912A003B5AED /* TrigramsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		E17E151E17F78829003B5AED /* test kata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test kata.txt"; sourceTree = "<group>"; };
 		E17E152A17F78BE2003B5AED /* TrigramsReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsReaderTests.h; sourceTree = "<group>"; };
 		E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsReaderTests.m; sourceTree = "<group>"; };
+		E17E152D17F7912A003B5AED /* TrigramsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsParser.h; sourceTree = SOURCE_ROOT; };
+		E17E152E17F7912A003B5AED /* TrigramsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsParser.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				E17E150D17F758BB003B5AED /* Trigram.m */,
 				E17E151617F78225003B5AED /* TrigramsReader.h */,
 				E17E151717F78225003B5AED /* TrigramsReader.m */,
+				E17E152D17F7912A003B5AED /* TrigramsParser.h */,
+				E17E152E17F7912A003B5AED /* TrigramsParser.m */,
 			);
 			path = Trigrams;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				E17E14EE17F7485A003B5AED /* ViewController.m in Sources */,
 				E17E150E17F758BB003B5AED /* Trigram.m in Sources */,
 				E17E151817F78226003B5AED /* TrigramsReader.m in Sources */,
+				E17E152F17F7912A003B5AED /* TrigramsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +348,7 @@
 				E17E150F17F758BB003B5AED /* Trigram.m in Sources */,
 				E17E151917F78226003B5AED /* TrigramsReader.m in Sources */,
 				E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */,
+				E17E153017F7912A003B5AED /* TrigramsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

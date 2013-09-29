@@ -10,13 +10,17 @@
 
 @interface Trigram : NSObject
 
-@property NSString *key;
-@property NSMutableArray *adjacentWords;
+@property (strong, nonatomic) NSString *key;
+@property (strong, nonatomic) NSMutableArray *adjacentWords;
+@property int *count;
 
 
 
 -(id) init;
 
 -(id) initWithWords:(NSArray *) words;
+-(void) addAdjacentWord:(NSString *)word;
+-(NSString*) getAdjacentWord;
+-(void)addCount;
 
 @end

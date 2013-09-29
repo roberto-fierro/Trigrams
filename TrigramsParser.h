@@ -1,5 +1,5 @@
 //
-//  TrigramsReader.h
+//  TrigramsParser.h
 //  Trigrams
 //
 //  Created by Roberto Fierro Martinez on 9/28/13.
@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TrigramsReader : NSObject
+@interface TrigramsParser : NSObject
 
--(NSArray *)readTrigramsFromFileName:(NSString*)fileName;
+
+
+
 @end
