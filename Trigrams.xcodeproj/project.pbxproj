@@ -40,6 +40,7 @@
 		E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */; };
 		E17E152F17F7912A003B5AED /* TrigramsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152E17F7912A003B5AED /* TrigramsParser.m */; };
 		E17E153017F7912A003B5AED /* TrigramsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E152E17F7912A003B5AED /* TrigramsParser.m */; };
+		E17E153317F7A97B003B5AED /* TrigramParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153217F7A97B003B5AED /* TrigramParserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsReaderTests.m; sourceTree = "<group>"; };
 		E17E152D17F7912A003B5AED /* TrigramsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsParser.h; sourceTree = SOURCE_ROOT; };
 		E17E152E17F7912A003B5AED /* TrigramsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsParser.m; sourceTree = SOURCE_ROOT; };
+		E17E153117F7A97B003B5AED /* TrigramParserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramParserTests.h; sourceTree = "<group>"; };
+		E17E153217F7A97B003B5AED /* TrigramParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramParserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 				E17E14FC17F7485B003B5AED /* Supporting Files */,
 				E17E152A17F78BE2003B5AED /* TrigramsReaderTests.h */,
 				E17E152B17F78BE2003B5AED /* TrigramsReaderTests.m */,
+				E17E153117F7A97B003B5AED /* TrigramParserTests.h */,
+				E17E153217F7A97B003B5AED /* TrigramParserTests.m */,
 			);
 			path = TrigramsTests;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				E17E151917F78226003B5AED /* TrigramsReader.m in Sources */,
 				E17E152C17F78BE2003B5AED /* TrigramsReaderTests.m in Sources */,
 				E17E153017F7912A003B5AED /* TrigramsParser.m in Sources */,
+				E17E153317F7A97B003B5AED /* TrigramParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

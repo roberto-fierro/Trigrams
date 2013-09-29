@@ -12,13 +12,14 @@
 
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) NSMutableArray *adjacentWords;
-@property int *count;
+@property (strong, nonatomic) NSNumber *count;
 
 
 
 -(id) init;
 
 -(id) initWithWords:(NSArray *) words;
+-(NSString *) description;
 -(void) addAdjacentWord:(NSString *)word;
 -(NSString*) getAdjacentWord;
 -(void)addCount;

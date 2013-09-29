@@ -10,7 +10,11 @@
 
 @interface TrigramsParser : NSObject
 
+@property (strong, nonatomic) NSMutableDictionary *trigramsDictionary;
 
+-(id) init;
 
+-(void) parseTrigramsWithString:(NSString *)string;
 
+-(NSString*) addBlanckspceToPuntuationInString:(NSString *) string;
 @end

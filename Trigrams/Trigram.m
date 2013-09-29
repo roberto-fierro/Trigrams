@@ -29,14 +29,27 @@
         //Error Notification
         NSLog(@"Three words exactly for a Trigram.");
     }
-    self.key = [self generateKeyWithWords:words];
-    self.adjacentWords = [[NSMutableArray alloc] init];
-    [self.adjacentWords addObject:words[2]];
+    _key = [self generateKeyWithWords:words];
+    _adjacentWords = [[NSMutableArray alloc] init];
+    _count = [NSNumber numberWithInt:0];
+    [self.adjacentWords addObject:[words objectAtIndex:2]];
     return(self);
 }
 
+-(NSString *) description{
+    NSString *description = @"";
+    description = [description stringByAppendingFormat:@"**** Trigram **** \nTrigram Key: %@\n",self.key];
+    description = [description stringByAppendingFormat:@"Trigram Count: %@\nTrigram Adjacent Words:\n",self.count];
+    for (NSString *word in self.adjacentWords) {
+        description = [description stringByAppendingFormat:@"%@\n", word];
+    }
+    description = [description stringByAppendingString:@"\n**** End ****\n"];
+    
+    return description;
+}
+
 -(NSString*) generateKeyWithWords: (NSArray*)words{
-    NSString *key = [NSString stringWithFormat: @"%@ %@", words[0], words[1]];
+    NSString *key = [NSString stringWithFormat: @"%@ %@", [words objectAtIndex:0], [words objectAtIndex:1]];
     return key;
 }
 
@@ -50,8 +63,10 @@
 }
 
 -(void) addCount {
-    self.count++;
+    int value = [_count intValue];
+    _count = [NSNumber numberWithInt:value + 1];
 }
+
 
 
 

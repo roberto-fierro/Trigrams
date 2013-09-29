@@ -9,35 +9,57 @@
 #import "TrigramsParser.h"
 #import "Trigram.h"
 
-@implementation TrigramsParser{
-    NSMutableDictionary *trigramsDictionary;
+@implementation TrigramsParser
+
+@synthesize trigramsDictionary = _trigramsDictionary;
+
+-(id) init {
+    self = [super init];
+    if (self) {
+        NSLog(@"_init: %@", self);
+        _trigramsDictionary = [[NSMutableDictionary alloc] init];
+    }
+    return(self);
+}
+
+-(NSString*) addBlanckspceToPuntuationInString:(NSString *) string{
+    NSString *cleanString = [string stringByReplacingOccurrencesOfString:@"\"" withString:@" \" " options: NSRegularExpressionSearch range:NSMakeRange(0, string.length)];
+    cleanString = [cleanString stringByReplacingOccurrencesOfString:@"\\." withString:@" ." options: NSRegularExpressionSearch range:NSMakeRange(0, string.length)];
+    cleanString = [cleanString stringByReplacingOccurrencesOfString:@"," withString:@" ," options: NSRegularExpressionSearch range:NSMakeRange(0, string.length)];
+    cleanString = [cleanString stringByReplacingOccurrencesOfString:@":" withString:@" :" options: NSRegularExpressionSearch range:NSMakeRange(0, string.length)];
+    cleanString = [cleanString stringByReplacingOccurrencesOfString:@";" withString:@" ;" options: NSRegularExpressionSearch range:NSMakeRange(0, string.length)];
+    return cleanString;
 }
 
 -(NSArray *) arrayOfWordsFromString:(NSString *) string{
-    return [string componentsSeparatedByString:@" "];
+    NSString *escapedString = [self addBlanckspceToPuntuationInString:string];
+    return [escapedString componentsSeparatedByString:@" "];
 }
 
--(void) parseTrigramsWithArrayOfWords:(NSArray *)words{
+-(void) parseTrigramsWithString:(NSString *)string{
+    NSArray *words = [self arrayOfWordsFromString:string];
     if(words == nil || [words count] < 3){
+        NSLog(@"There is a problem with this string %@", string);
         return;
     }
     
-    for(int index=0; index < [words count]; index++){
+    for(int index=0; index <= [words count]-3; index++){
         
-        NSArray *trigramWords = [NSArray arrayWithObjects:words[index], words[index+1], words[index+2],nil];
+        NSArray *trigramWords = [NSArray arrayWithObjects:[words objectAtIndex:index] , [words objectAtIndex:index+1], [words objectAtIndex:index+2],nil];
         
         Trigram *trigram = [[Trigram alloc] initWithWords:trigramWords];
         
-        if( [trigramsDictionary objectForKey:trigram.key] ){
-            [[trigramsDictionary objectForKey:trigram.key] addCount];
-            [[trigramsDictionary objectForKey:trigram.key] addAdjacentWord:trigramWords[2]];
+        if( [self.trigramsDictionary objectForKey:trigram.key] ){
+            [[self.trigramsDictionary objectForKey:trigram.key] addCount];
+            [[self.trigramsDictionary objectForKey:trigram.key] addAdjacentWord:trigramWords[2]];
         } else {
             [trigram addCount];
-            [trigramsDictionary setObject:trigram forKey:trigram.key];
+            [self.trigramsDictionary setObject:trigram forKey:trigram.key];
         }
         
     }
 }
+
 
 
 
