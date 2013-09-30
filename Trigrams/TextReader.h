@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TrigramsReader : NSObject
+@interface TextReader : NSObject
 
--(NSArray *)readTrigramsFromFileName:(NSString*)fileName;
+-(NSArray *)readTextFromFileName:(NSString*)fileName;
 @end

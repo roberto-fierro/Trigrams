@@ -1,13 +1,13 @@
 //
-//  TrigramsReaderTests.h
+//  TextGenerator.h
 //  Trigrams
 //
-//  Created by Roberto Fierro Martinez on 9/28/13.
+//  Created by Roberto Fierro Martinez on 9/29/13.
 //  Copyright (c) 2013 Roberto Fierro. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface TrigramsReaderTests : SenTestCase
+@interface TextGeneratorTests : SenTestCase
 
 @end

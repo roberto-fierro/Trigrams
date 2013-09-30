@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Roberto Fierro. All rights reserved.
 //
 
-#import "TrigramsReader.h"
+#import "TextReader.h"
 
-@implementation TrigramsReader
+@implementation TextReader
 
 
--(NSArray *)readTrigramsFromFileName:(NSString*)fileName{
+-(NSArray *)readTextFromFileName:(NSString*)fileName{
     //All books will be txt files
     NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
     NSError *error;

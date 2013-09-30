@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Roberto Fierro. All rights reserved.
 //
 
-#import "TrigramsReaderTests.h"
-#import "TrigramsReader.h"
+#import "TextReaderTests.h"
+#import "TextReader.h"
 
-@implementation TrigramsReaderTests
+@implementation TextReaderTests
 
 - (void)setUp
 {
@@ -27,16 +27,16 @@
 
 - (void) testReadTrigramsFromFileName {
     NSString *fileName = @"test kata";
-    TrigramsReader *reader = [[TrigramsReader alloc] init];
-    NSArray *paragraphs = [reader readTrigramsFromFileName:fileName];
+    TextReader *reader = [[TextReader alloc] init];
+    NSArray *paragraphs = [reader readTextFromFileName:fileName];
     STAssertNotNil(paragraphs, @"Something happen trying to read the file %@", fileName);
     
 }
 
 - (void) testReadTrigramsFromFileNameHasAtLeastOneParagraph {
     NSString *fileName = @"test kata";
-    TrigramsReader *reader = [[TrigramsReader alloc] init];
-    NSArray *paragraphs = [reader readTrigramsFromFileName:fileName];
+    TextReader *reader = [[TextReader alloc] init];
+    NSArray *paragraphs = [reader readTextFromFileName:fileName];
     STAssertTrue([paragraphs count] > 0, @"The file is empty? the count is %i", [paragraphs count]);
 }
 

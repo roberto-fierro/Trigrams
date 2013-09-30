@@ -1,18 +1,19 @@
 //
-//  TrigramParserTests.m
+//  TextGenerator.m
 //  Trigrams
 //
-//  Created by Roberto Fierro Martinez on 9/28/13.
+//  Created by Roberto Fierro Martinez on 9/29/13.
 //  Copyright (c) 2013 Roberto Fierro. All rights reserved.
 //
 
-#import "TrigramParserTests.h"
+#import "TextGeneratorTests.h"
 #import "TextReader.h"
 #import "TrigramsGenerator.h"
 #import "Trigram.h"
+#import "TextGenerator.h"
 
+@implementation TextGeneratorTests
 
-@implementation TrigramParserTests
 
 - (void)setUp
 {
@@ -29,26 +30,24 @@
 }
 
 
--(void) testParsingTrigramsWithString{
-    NSString *fileName = @"test kata";
+-(void) testGenerateText{
+    NSString *fileName = @"book1";
     TextReader *reader = [[TextReader alloc] init];
     NSArray *paragraphs = [reader readTextFromFileName:fileName];
     TrigramsGenerator *parser = [[TrigramsGenerator alloc] init];
-    STAssertNotNil(parser.trigramsDictionary, @"Something happen while accessing dictionary %@", parser.trigramsDictionary);
     [paragraphs enumerateObjectsUsingBlock:^(id anObject, NSUInteger idx, BOOL *stop) {
         NSString *paragraph = (NSString*)anObject;
         [parser generateTrigramsWithParagraph:paragraph];
     }];
-    STAssertNotNil(parser.trigramsDictionary, @"Something happen while accessing dictionary %@", parser.trigramsDictionary);
     
-    [parser.trigramsDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id object, BOOL *stop) {
-        STAssertNotNil(object, @"Something happen while accessing object %@", object);
-        NSLog(@"%@",object);
-        
-    }];
+    TextGenerator *generator = [[TextGenerator alloc] init];
+    generator.starterKey = [parser getStarterKey];
+    NSString *generatedText = [generator generateTextWithTrigramsDictionary:parser.trigramsDictionary];
+    
+    STAssertNotNil(generatedText, @"No generated text that's bad!!");
+    
+    NSLog(@"Generated text \n%@",generatedText);
 }
-
-
 
 
 @end
