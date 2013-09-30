@@ -1,10 +1,1 @@
 I wish I may I wish I might
-
-I, {I wish, I}
-
-key = I wish
-
-key.second word= wish
-
-return wish + I
-

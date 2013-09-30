@@ -17,7 +17,6 @@
 		E17E14E617F7485A003B5AED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E17E14E517F7485A003B5AED /* Default@2x.png */; };
 		E17E14E817F7485A003B5AED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E17E14E717F7485A003B5AED /* Default-568h@2x.png */; };
 		E17E14EB17F7485A003B5AED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17E14E917F7485A003B5AED /* MainStoryboard.storyboard */; };
-		E17E14EE17F7485A003B5AED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E14ED17F7485A003B5AED /* ViewController.m */; };
 		E17E14F617F7485B003B5AED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17E14F517F7485B003B5AED /* SenTestingKit.framework */; };
 		E17E14F717F7485B003B5AED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17E14D117F7485A003B5AED /* UIKit.framework */; };
 		E17E14F817F7485B003B5AED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17E14D317F7485A003B5AED /* Foundation.framework */; };
@@ -43,6 +42,12 @@
 		E17E153717F91580003B5AED /* TextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153617F91580003B5AED /* TextGenerator.m */; };
 		E17E153817F91580003B5AED /* TextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153617F91580003B5AED /* TextGenerator.m */; };
 		E17E153B17F91D2A003B5AED /* TextGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153A17F91D2A003B5AED /* TextGeneratorTests.m */; };
+		E17E153E17F928A3003B5AED /* TrigramsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153D17F928A3003B5AED /* TrigramsTableViewCell.m */; };
+		E17E153F17F928A3003B5AED /* TrigramsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E153D17F928A3003B5AED /* TrigramsTableViewCell.m */; };
+		E17E154217F92C3E003B5AED /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E154117F92C3E003B5AED /* ListViewController.m */; };
+		E17E154317F92C3E003B5AED /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E154117F92C3E003B5AED /* ListViewController.m */; };
+		E17E154717F93779003B5AED /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E154617F93779003B5AED /* TextViewController.m */; };
+		E17E154817F93779003B5AED /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E154617F93779003B5AED /* TextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +75,6 @@
 		E17E14E517F7485A003B5AED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E17E14E717F7485A003B5AED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E17E14EA17F7485A003B5AED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E17E14EC17F7485A003B5AED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E17E14ED17F7485A003B5AED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E17E14F417F7485B003B5AED /* TrigramsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigramsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17E14F517F7485B003B5AED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E17E14FD17F7485B003B5AED /* TrigramsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrigramsTests-Info.plist"; sourceTree = "<group>"; };
@@ -96,6 +99,12 @@
 		E17E153617F91580003B5AED /* TextGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextGenerator.m; sourceTree = "<group>"; };
 		E17E153917F91D2A003B5AED /* TextGeneratorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextGeneratorTests.h; sourceTree = "<group>"; };
 		E17E153A17F91D2A003B5AED /* TextGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextGeneratorTests.m; sourceTree = "<group>"; };
+		E17E153C17F928A2003B5AED /* TrigramsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsTableViewCell.h; sourceTree = "<group>"; };
+		E17E153D17F928A3003B5AED /* TrigramsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsTableViewCell.m; sourceTree = "<group>"; };
+		E17E154017F92C3E003B5AED /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		E17E154117F92C3E003B5AED /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		E17E154517F93779003B5AED /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		E17E154617F93779003B5AED /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,18 +168,14 @@
 				E17E14E017F7485A003B5AED /* AppDelegate.h */,
 				E17E14E117F7485A003B5AED /* AppDelegate.m */,
 				E17E14E917F7485A003B5AED /* MainStoryboard.storyboard */,
-				E17E14EC17F7485A003B5AED /* ViewController.h */,
-				E17E14ED17F7485A003B5AED /* ViewController.m */,
+				E17E154017F92C3E003B5AED /* ListViewController.h */,
+				E17E154117F92C3E003B5AED /* ListViewController.m */,
+				E17E153C17F928A2003B5AED /* TrigramsTableViewCell.h */,
+				E17E153D17F928A3003B5AED /* TrigramsTableViewCell.m */,
+				E17E154417F93722003B5AED /* Model */,
 				E17E14D817F7485A003B5AED /* Supporting Files */,
-				E17E150C17F758BB003B5AED /* Trigram.h */,
-				E17E150D17F758BB003B5AED /* Trigram.m */,
-				E17E151617F78225003B5AED /* TextReader.h */,
-				E17E151717F78225003B5AED /* TextReader.m */,
-				E17E152D17F7912A003B5AED /* TrigramsGenerator.h */,
-				E17E152E17F7912A003B5AED /* TrigramsGenerator.m */,
-				E17E153417F8FB29003B5AED /* Constants.h */,
-				E17E153517F9157F003B5AED /* TextGenerator.h */,
-				E17E153617F91580003B5AED /* TextGenerator.m */,
+				E17E154517F93779003B5AED /* TextViewController.h */,
+				E17E154617F93779003B5AED /* TextViewController.m */,
 			);
 			path = Trigrams;
 			sourceTree = "<group>";
@@ -222,6 +227,22 @@
 				E17E151E17F78829003B5AED /* test kata.txt */,
 			);
 			name = "Book Files";
+			sourceTree = "<group>";
+		};
+		E17E154417F93722003B5AED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E17E150C17F758BB003B5AED /* Trigram.h */,
+				E17E150D17F758BB003B5AED /* Trigram.m */,
+				E17E151617F78225003B5AED /* TextReader.h */,
+				E17E151717F78225003B5AED /* TextReader.m */,
+				E17E152D17F7912A003B5AED /* TrigramsGenerator.h */,
+				E17E152E17F7912A003B5AED /* TrigramsGenerator.m */,
+				E17E153417F8FB29003B5AED /* Constants.h */,
+				E17E153517F9157F003B5AED /* TextGenerator.h */,
+				E17E153617F91580003B5AED /* TextGenerator.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,11 +367,13 @@
 			files = (
 				E17E14DE17F7485A003B5AED /* main.m in Sources */,
 				E17E14E217F7485A003B5AED /* AppDelegate.m in Sources */,
-				E17E14EE17F7485A003B5AED /* ViewController.m in Sources */,
 				E17E150E17F758BB003B5AED /* Trigram.m in Sources */,
 				E17E151817F78226003B5AED /* TextReader.m in Sources */,
 				E17E152F17F7912A003B5AED /* TrigramsGenerator.m in Sources */,
 				E17E153717F91580003B5AED /* TextGenerator.m in Sources */,
+				E17E153E17F928A3003B5AED /* TrigramsTableViewCell.m in Sources */,
+				E17E154217F92C3E003B5AED /* ListViewController.m in Sources */,
+				E17E154717F93779003B5AED /* TextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +388,9 @@
 				E17E153317F7A97B003B5AED /* TrigramParserTests.m in Sources */,
 				E17E153817F91580003B5AED /* TextGenerator.m in Sources */,
 				E17E153B17F91D2A003B5AED /* TextGeneratorTests.m in Sources */,
+				E17E153F17F928A3003B5AED /* TrigramsTableViewCell.m in Sources */,
+				E17E154317F92C3E003B5AED /* ListViewController.m in Sources */,
+				E17E154817F93779003B5AED /* TextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
