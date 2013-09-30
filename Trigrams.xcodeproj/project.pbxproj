@@ -90,8 +90,8 @@
 		E17E151E17F78829003B5AED /* test kata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test kata.txt"; sourceTree = "<group>"; };
 		E17E152A17F78BE2003B5AED /* TextReaderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextReaderTests.h; sourceTree = "<group>"; };
 		E17E152B17F78BE2003B5AED /* TextReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextReaderTests.m; sourceTree = "<group>"; };
-		E17E152D17F7912A003B5AED /* TrigramsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramsGenerator.h; sourceTree = SOURCE_ROOT; };
-		E17E152E17F7912A003B5AED /* TrigramsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramsGenerator.m; sourceTree = SOURCE_ROOT; };
+		E17E152D17F7912A003B5AED /* TrigramsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrigramsGenerator.h; path = Trigrams/TrigramsGenerator.h; sourceTree = SOURCE_ROOT; };
+		E17E152E17F7912A003B5AED /* TrigramsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrigramsGenerator.m; path = Trigrams/TrigramsGenerator.m; sourceTree = SOURCE_ROOT; };
 		E17E153117F7A97B003B5AED /* TrigramParserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrigramParserTests.h; sourceTree = "<group>"; };
 		E17E153217F7A97B003B5AED /* TrigramParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrigramParserTests.m; sourceTree = "<group>"; };
 		E17E153417F8FB29003B5AED /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -172,10 +172,10 @@
 				E17E154117F92C3E003B5AED /* ListViewController.m */,
 				E17E153C17F928A2003B5AED /* TrigramsTableViewCell.h */,
 				E17E153D17F928A3003B5AED /* TrigramsTableViewCell.m */,
-				E17E154417F93722003B5AED /* Model */,
-				E17E14D817F7485A003B5AED /* Supporting Files */,
 				E17E154517F93779003B5AED /* TextViewController.h */,
 				E17E154617F93779003B5AED /* TextViewController.m */,
+				E17E154417F93722003B5AED /* Model */,
+				E17E14D817F7485A003B5AED /* Supporting Files */,
 			);
 			path = Trigrams;
 			sourceTree = "<group>";
