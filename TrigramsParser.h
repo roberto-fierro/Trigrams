@@ -20,4 +20,7 @@
 
 -(NSString*) addBlanckspceToPuntuationInString:(NSString *) string;
 
+-(BOOL) validatePunctuationSignInKey:(NSString*) key AtWord:(int) wordIndex;
+-(NSString*) generateText;
+
 @end

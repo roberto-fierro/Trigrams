@@ -67,7 +67,6 @@
     
     [paragraphs enumerateObjectsUsingBlock:^(id anObject, NSUInteger idx, BOOL *stop) {
         NSString *paragraph = (NSString*)anObject;
-        paragraph = [parser addBlanckspceToPuntuationInString:paragraph];
         NSLog(@"%@",paragraph);
         [parser parseTrigramsWithString:paragraph];
     }];
@@ -76,6 +75,19 @@
     STAssertNotNil([parser lastCounter], @"Biggest counter is null that's a problem!!");
     NSLog(@"StarterKey is: %@",[parser starterKey]);
     NSLog(@"Biggest counter is: %@",[parser lastCounter]);
+    
+    NSString *generatedString = [parser generateText];
+    STAssertNotNil(generatedString, @"Generated text is null that's a problem!!");
+    NSLog(@"Text:\n%@",generatedString);
+}
+
+-(void) testValidatePunctuationSignInKeyAtWord{
+    TrigramsParser *parser = [[TrigramsParser alloc] init];
+    NSString *testStringFirst = @". test";
+    NSString *testStringSecond = @"test ,";
+    
+    STAssertTrue([parser validatePunctuationSignInKey:testStringFirst AtWord:FIRST_WORD], @"The test string starts with a punctuation sign!");
+    STAssertTrue([parser validatePunctuationSignInKey:testStringSecond AtWord:SECOND_WORD], @"The test string end with a punctuation sign!");
 }
 
 

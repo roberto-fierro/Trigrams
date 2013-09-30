@@ -32,7 +32,7 @@
     _key = [self generateKeyWithWords:words];
     _adjacentWords = [[NSMutableArray alloc] init];
     _count = [NSNumber numberWithInt:0];
-    [self.adjacentWords addObject:[words objectAtIndex:2]];
+    [self.adjacentWords addObject:[words objectAtIndex:THIRD_WORD]];
     return(self);
 }
 
@@ -49,7 +49,7 @@
 }
 
 -(NSString*) generateKeyWithWords: (NSArray*)words{
-    NSString *key = [NSString stringWithFormat: @"%@ %@", [words objectAtIndex:0], [words objectAtIndex:1]];
+    NSString *key = [NSString stringWithFormat: @"%@ %@", [words objectAtIndex:FIRST_WORD], [words objectAtIndex:SECOND_WORD]];
     return key;
 }
 
