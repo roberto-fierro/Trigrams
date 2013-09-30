@@ -23,10 +23,10 @@
     return nil;
 }
 
+// Initialize a trigram with a array of 3 words
 -(id) initWithWords:(NSArray *) words{
     self = [self init];
     if([words count] != 3){
-        //Error Notification
         NSLog(@"Three words exactly for a Trigram.");
     }
     _key = [self generateKeyWithWords:words];
@@ -48,20 +48,25 @@
     return description;
 }
 
+//Create the kwy for this trigram 
 -(NSString*) generateKeyWithWords: (NSArray*)words{
     NSString *key = [NSString stringWithFormat: @"%@ %@", [words objectAtIndex:FIRST_WORD], [words objectAtIndex:SECOND_WORD]];
     return key;
 }
 
+//The third word on the initWithWords array is the adjacent word, it is save it
+//in adjacentWords array
 -(void) addAdjacentWord:(NSString *)word{
     [self.adjacentWords addObject:word];
 }
 
+//Selects randomly a adjacent word 
 -(NSString*) getAdjacentWord{
     int randomNumber = arc4random() % [self.adjacentWords count];
     return [self.adjacentWords objectAtIndex:randomNumber];
 }
 
+//Add 1 to the count of occurrences of this key in the text
 -(void) addCount {
     int value = [_count intValue];
     _count = [NSNumber numberWithInt:value + 1];

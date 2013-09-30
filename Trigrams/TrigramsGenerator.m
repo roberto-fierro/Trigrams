@@ -28,6 +28,8 @@
     return(self);
 }
 
+//Quotes ('"'), parentheses ('(', ')') and new lines ('\r','\n') are ignored.
+//? . , : ; are considered as words and are separated with a blank space
 -(NSString*) parsePuntuationInString:(NSString *) string{
     if([string isEqualToString:@"\r"] || [string length]==0){
         return nil;
@@ -44,11 +46,16 @@
     return cleanString;
 }
 
+//Parse the string with parsePuntuationInString and returns an array of words by
+//separating it with a blank spaces
 -(NSArray *) getArrayOfWordsFromString:(NSString *) string{
     NSString *escapedString = [self parsePuntuationInString:string];
     return [escapedString componentsSeparatedByString:@" "];
 }
 
+//Received a paragrapgh from the original text and obtains all the trigrams that
+//contained on it. Populate the trigrams dictionary and also saves the key with
+//most of the ocurrences
 -(void) generateTrigramsWithParagraph:(NSString *)paragraph{
     NSArray *words = [self getArrayOfWordsFromString:paragraph];
     if(words == nil || [words count] < 3){
@@ -70,9 +77,11 @@
             [self.trigramsDictionary setObject:trigram forKey:trigram.key];
         }
         
+        //save key with most of the ocurrences
         trigram = (Trigram*)[self.trigramsDictionary objectForKey:trigram.key];
         int currentCountForKey = [[trigram count] integerValue];
         
+
         if(currentCountForKey > [lastCount integerValue]){
             lastCount = [NSNumber numberWithInt:currentCountForKey];
             starterKey = trigram.key;
@@ -81,6 +90,7 @@
     }
 }
 
+// returns the trigram key that had the most ocurrences
 -(NSString*) getStarterKey{
     return starterKey;
 }

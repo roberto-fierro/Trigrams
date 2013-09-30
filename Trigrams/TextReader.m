@@ -10,7 +10,9 @@
 
 @implementation TextReader
 
-
+// Read a txt file from Gutember Project and returns an array of the paragraph
+//contained in the text, paragraph are obtained spliting the string with DOS
+//line endings
 -(NSArray *)readTextFromFileName:(NSString*)fileName{
     //All books will be txt files
     NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];

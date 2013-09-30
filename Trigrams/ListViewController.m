@@ -50,17 +50,23 @@
     }
 }
 
+//generate text from the selected book option
 -(NSString*) generateTextFromBookOrText:(NSString*) fileName{
+    //read the txt file and obtain array of paragraphs
     TextReader *reader = [[TextReader alloc] init];
     NSArray *paragraphs = [reader readTextFromFileName:fileName];
+    //obtains the trigrams from the text 
     TrigramsGenerator *parser = [[TrigramsGenerator alloc] init];
     [paragraphs enumerateObjectsUsingBlock:^(id anObject, NSUInteger idx, BOOL *stop) {
         NSString *paragraph = (NSString*)anObject;
+        //the populates the trigram dictionary
         [parser generateTrigramsWithParagraph:paragraph];
     }];
-    
+    //generate the text
     TextGenerator *generator = [[TextGenerator alloc] init];
+    //obtain starter key from parser
     generator.starterKey = [parser getStarterKey];
+    //obtaion the text
     NSString *generatedText = [generator generateTextWithTrigramsDictionary:parser.trigramsDictionary];
     
     
@@ -77,6 +83,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    //fixed options
     self.textsArray = [[NSMutableArray alloc] initWithObjects:
                       @"Generate text from kata 14 example",
                       @"Generate text from \"Tom Swift and his Airship\"",
